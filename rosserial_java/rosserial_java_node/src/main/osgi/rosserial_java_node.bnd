@@ -1,0 +1,9 @@
+bundle.version=0.0.0
+bundle.artifactId=org.ros.rosjava.rosserial_java_node
+-output: target/${bundle.artifactId}-${bundle.version}.jar
+
+Bundle-Name: ${bundle.artifactId}
+Bundle-SymbolicName: ${bundle.artifactId}
+Bundle-Version: ${bundle.version}
+
+Export-Package: org.ros.rosserial.*

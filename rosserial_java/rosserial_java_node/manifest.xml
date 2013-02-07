@@ -1,0 +1,23 @@
+<package>
+  <description brief="rosserial_java_node">
+
+     This package contains the node for the rosserial_java implementation.
+    It has been sepparated from the library so that both the android and
+    PC implementations can use the same rosserial_java backend.
+
+  </description>
+  <author>asher</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/rosserial_java_node</url>
+  <depend package="rosserial_java"/>
+
+<export>
+	<rosjava-src location="src/main/java" />
+	<rosjava-pathelement location="target/" groupId="org.ros" artifactId="org.ros.rosjava.rosserial_java_node" version="0.0.0" built="true" />
+	<rosjava-pathelement groupId="org.rxtx" artifactId="rxtx-osgi" version="2.1.7" />
+</export>
+
+</package>
+
+
