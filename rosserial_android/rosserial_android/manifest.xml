@@ -1,0 +1,31 @@
+<package>
+  <description brief="rosserial_android">
+
+     rosserial_android is an Android implementation of the rosserial
+     master protocol.  It provides an Android service which 
+     communicates with an Android ADK board and publishes the messages
+     directly to ROS.
+  </description>
+  <author>Adam Stambler</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/rosserial_android</url>
+  <depend package="rosjava"/>
+  <depend package="rosserial_java"/>
+  <depend package="std_msgs"/>
+  <depend package="sensor_msgs"/>
+  <depend package="nav_msgs"/>
+  <depend package="rosserial_msgs"/>
+  <depend package="android"/>
+    
+  <export>
+    <rosjava-android-app/>
+    <rosjava-android target="Google Inc.:Google APIs:10"/>
+    <rosjava-src location="src" />
+    <rosjava-src location="gen" />
+    <rosjava-src location="res" />    
+  </export>
+
+</package>
+
+

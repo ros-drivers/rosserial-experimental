@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    >
+    
+    <TextView  
+    android:layout_width="wrap_content" 
+    android:layout_height="wrap_content" 
+    android:text="Connecting to : "
+    />
+<TextView  
+    android:layout_width="wrap_content" 
+    android:layout_height="wrap_content" 
+    android:text="@string/ROS_MASTER_URI"
+    />
+
+</LinearLayout>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    >
+	    
+	<TextView  
+	    android:layout_width="wrap_content" 
+	    android:layout_height="wrap_content" 
+	    android:text="My IP address is to : "/>
+	<TextView  
+	    android:layout_width="wrap_content" 
+	    android:layout_height="wrap_content" 
+	    android:text="I dont know"
+	    android:id="@+id/ip_text"
+	    />
+	</LinearLayout>
+    
+    
+    <org.ros.rosjava.android.views.RosTextView 
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:textSize="30dip"
+    android:id="@+id/text"
+    android:text="Nothing in RosTextView"
+    />
+</LinearLayout>

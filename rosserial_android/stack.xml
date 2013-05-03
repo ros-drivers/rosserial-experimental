@@ -1,0 +1,17 @@
+<stack>
+  <description brief="rosserial_android">
+  rosserial_android stack allows the Android adk to directly publish ROS
+  messages through an Android device.  The ADK runs a modified 
+  rosserial_arduino firmware.  In this stack there is a Android app/library
+   and  ADK demo firmware.  
+  </description>
+  <author>Adam Stambler</author>
+  <license>BSD</license>  
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/rosserial_android</url>
+  <depend stack="ros" />
+  <depend stack="rosserial" /> 
+  <depend stack="rosserial_java"/>
+  <depend stack="rosserial_arduino"/>
+  
+</stack>

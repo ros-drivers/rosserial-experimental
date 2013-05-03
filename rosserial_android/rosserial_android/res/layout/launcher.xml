@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+    <TextView android:layout_width="wrap_content" 
+    	android:layout_height="wrap_content" 
+    	android:text="Not Connected" 
+    	android:id="@+id/ConncectionStatusView" 
+    	android:textAppearance="?android:attr/textAppearanceLarge">
+    </TextView>
+    <TextView android:id="@+id/PublicationsView"
+     android:text="No Publications" android:layout_width="wrap_content" 
+     android:layout_height="wrap_content" 
+     android:textAppearance="?android:attr/textAppearanceLarge">
+     </TextView>
+     <TextView android:id="@+id/SubscriptionsView"
+     android:text="No Subscriptions" android:layout_width="wrap_content" 
+     android:layout_height="wrap_content" 
+     android:textAppearance="?android:attr/textAppearanceLarge">
+     </TextView>
+    <TextView android:text="ROS Master URI:" 
+    android:textAppearance="?android:attr/textAppearanceLarge"
+     android:id="@+id/textView2"
+      android:layout_width="wrap_content" 
+      android:layout_height="wrap_content"></TextView>
+     <EditText android:id="@+id/MasterURITxt"
+      android:text="@string/ROS_MASTER_URI" 
+      android:layout_width="match_parent" 
+      android:layout_height="wrap_content"></EditText>
+     <TextView android:text="Node Name:" 
+     android:id="@+id/textView1"
+     android:textAppearance="?android:attr/textAppearanceLarge"
+     
+      android:layout_width="wrap_content" 
+      android:layout_height="wrap_content"></TextView>
+     <EditText android:id="@+id/NodeNameTxt" 
+     android:text="ROSSerialADK" 
+     android:layout_width="match_parent" 
+     android:layout_height="wrap_content"></EditText>
+     <Button android:text="Start Node" 
+       android:id="@+id/StartButton" 
+       android:layout_width="wrap_content" 
+       android:layout_height="wrap_content"
+       android:textAppearance="?android:attr/textAppearanceLarge"
+       >
+       </Button>
+<Button android:text="Stop Node" 
+       android:id="@+id/StopButton" 
+       android:layout_width="wrap_content" 
+       android:layout_height="wrap_content"
+       android:textAppearance="?android:attr/textAppearanceLarge"
+       >
+       </Button>
+  
+</LinearLayout>
